@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  groot-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: groot-bot
+    restart: always
+    environment:
+      - BOT_TOKEN=8347269491:AAGzrx1y8nXxDpV2uiq5xLmgi0GgLpZ7z-k
+      - BOT_USERNAME=Groot64_bot
+      - OPENROUTER_API_KEY=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
